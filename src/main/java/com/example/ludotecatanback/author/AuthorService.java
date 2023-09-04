@@ -7,6 +7,8 @@ import org.springframework.data.domain.Page;
 
 public interface AuthorService {
 
+    Author get(Long id);
+
     Page<Author> findPage(AuthorSearchDto dto);
     void save(Long id, AuthorDto dto);
     void delete(Long id) throws Exception;
